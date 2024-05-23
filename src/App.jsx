@@ -6,7 +6,7 @@ import axios from 'axios'
 function App() {
   const [facts, setFacts] = useState([])
   useEffect(()=>{
-    axios.get('https://server1-vgcz.onrender.com/api/facts')
+    axios.get('/api/facts')
     .then((response)=>{
       setFacts(response.data);
     })
